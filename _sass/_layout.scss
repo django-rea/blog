@@ -33,3 +33,45 @@
       }
   }
 }
+
+
+// HOME
+.home_intro {
+  margin-top: 60vh;
+  span {
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 200;
+    color: $p100;
+  }
+  h1 {
+    @include text-title-regular($p100);
+    line-height: 40px;
+    margin-top: 10px;
+  }
+}
+.post_title {
+  @include text-general($p100);
+  border-bottom: 1px solid;
+  padding-bottom:5px;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+}
+
+.list_post {
+  height: 460px;
+  margin-top: 10px;
+  background: white;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  .post_meta {
+    @include text-mini($p100);
+  }
+  .post_link {
+    @include text-mini-title-black($p100);
+    margin-top: 30px;
+  }
+}

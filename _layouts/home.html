@@ -19,11 +19,10 @@ layout: default
         {% for post in site.posts %}
         <div class='medium-4 columns'>
           <div class='list_post' style="background-image :url({{post.image}})">
-            {% assign date_format = site.minima.date_format | defadivt: "%b %-d, %Y" %}
-            <span class="post_meta">{{ post.date | date: date_format }}</span>
-            <h2>
-              <a class="post_link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
+            <a  href="{{ post.url | relative_url }}"></a>
+              {% assign date_format = site.minima.date_format | defadivt: "%b %-d, %Y" %}
+              <span class="post_meta">{{ post.date | date: date_format }}</span>
+              <h2 class="post_link">{{ post.title | escape }}</h2>
           </div>
         </div>
         {% endfor %}

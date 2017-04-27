@@ -107,6 +107,13 @@
     @include text-title-regular($p100);
     line-height: 40px;
     margin-top: 10px;
+    a {
+      border-bottom: 2px solid #DB5461;
+      @include text-mini-black($p100);
+      padding-bottom: 3px;
+      text-transform: uppercase;
+      margin-left: 5px;
+    }
   }
 }
 .post_title {
@@ -133,6 +140,10 @@
     right: 0;
     top: 0;
     bottom: 0;
+    @include transition(.3s);
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
   }
   .post_meta {
     @include text-mini($p100);
@@ -141,12 +152,15 @@
     @include text-mini-title-black($p100);
     margin-top: 30px;
   }
+  .post_excerpt {
+    @include text-general($p100);
+  }
 }
 
 .page-content {
   @include transition(.3s);
   &.active {
-    margin-left: 200px;
+    @include translate(200px, 0);
   }
 }
 

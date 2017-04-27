@@ -44,7 +44,7 @@
 
 .sidebar_menu {
   width: 200px;
-  background: #E8F1F2;
+  background: #292a3c;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -52,9 +52,11 @@
   padding-top: 40px;
   padding-left: 30px;
   z-index: 1;
+  border-right: 1px solid #202131;
+  box-shadow: 1px 0 0 0 rgba(255, 255, 255, 0.05);
   @include transition(.3s);
   h4 {
-    @include text-mini-black($p500);
+    @include text-mini-black($p100);
     text-transform: uppercase;
     margin-bottom: 30px;
   }
@@ -66,10 +68,10 @@
     padding: 0;
     margin: 0;
     .list_item {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       a {
-        @include text-title-regular($p500);
-        font-size: 18px;
+        @include text-title-regular($p100);
+        font-size: 15px;
         position: relative;
         @include transition(.3s);
         &:hover {
@@ -81,10 +83,10 @@
           @include transition(.3s);
           position: absolute;
           content: "";
-          bottom: -10px;
-          height: 2px;
-          left: -40px;
-          width: 100%;
+          bottom: 6px;
+          height: 6px;
+          left: -20px;
+          width: 6px;
           background: #DB5461;
         }
       }

@@ -1,4 +1,4 @@
-# OCP/DEEP v.2.0 Blog
+# Kamasi Blog
 
 ## Getting started
 

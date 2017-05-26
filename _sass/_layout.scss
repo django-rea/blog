@@ -173,6 +173,10 @@
   margin-bottom: 20px;
 }
 
+.post_list {
+  margin-bottom: 50px;
+}
+
 .list_post {
   height: 480px;
   margin-top: 10px;
@@ -183,6 +187,22 @@
   background-repeat: no-repeat;
   padding: 20px;
   position: relative;
+  .post_overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 480px;
+    z-index: 2;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+  }
   a {
     position: absolute;
     left: 0;
@@ -190,6 +210,7 @@
     top: 0;
     bottom: 0;
     @include transition(.3s);
+    z-index: 10;
     &:hover {
       background: rgba(255, 255, 255, 0.2);
     }
@@ -200,9 +221,20 @@
   .post_link {
     @include text-mini-title-black($p100);
     margin-top: 30px;
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    z-index: 5;
   }
   .post_excerpt {
     @include text-general($p100);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 5;
+    line-height: 22px;
   }
 }
 
@@ -213,7 +245,6 @@
     }
   &.active {
     @include translate(200px, 0);
-    color: red;
     @media screen and (max-width: 480px) {
       @include translate(0, 0px);
     }
@@ -229,8 +260,8 @@
     @include text-general($p100);
     margin-top: 60px;
     margin-bottom: 60px;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 30px;
     &:before {
       position: absolute;
       content: "";
@@ -275,12 +306,17 @@
     .post_info {
       position: absolute;
       bottom: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 3px;
   
     }
     .post_title {
       @include text-title-regular($p100);
       border: none;
       margin-top: 30px;
+      font-size: 40px;
+      letter-spacing: 4px;
     } 
     .post_meta {
       margin: 0;

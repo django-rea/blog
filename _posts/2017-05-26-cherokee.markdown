@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Cherokee"
+date:   2017-05-26 17:00:37 +0200
+categories: updates
+image: http://i.imgur.com/2iLhYcH.jpg
+---
+
+Kamasi is an opensource project that want to provide a usable and mobile friendly web app, to let people manage the value accounting of different projects, according to the valueflow (https://www.valueflo.ws/) vocabulary and the REA ontology.
+
+Kamasi is a client app made in React that implement a GraphQl layer with the specific intention to let the client be agnostic from any server implementation (actually its a django backend, maybe tomorrow a scuttlebot one?).
+
+The project born from the OCP backend, an NRP fork developed by Faircoop (http://fair.coop), in order to manage projects related to their European Cooperative: FreedomCoop (http://freedomcoop.eu).
+
+Valueflow is an extraordinary attempt to create a shared taxonomy in order to boost the collaborative economy and complex organizations on internet.
+
+We strongly believe that we need more open source tools that allow us to extends our autonomy and self-organizations on the web, without depends on third-part centralized service and that’s why we’re building Kamasi.
+Join this channel to see project updates and discussion, or join our telegram chat (PM me and Ill send you the link) :)
+Here the link to our github repository: https://github.com/django-rea/rea-app.
+
+Ah, Kamasi is also a contemporary talented jazz musician, cheerokee is one of his song ;)

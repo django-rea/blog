@@ -7,7 +7,7 @@ layout: default
     <div class='medium-8 columns medium-offset-1'>
       <div class='home_intro'>
         <span class='intro'>Hi there,</span>
-        <h1 class='intro_content'>We are a group of people from all over the world with the ambition to build the building blocks of the cooperative platform development. <a target='_blank' href='https://github.com/django-rea/rea-project/wiki'>Learn more</a></h1>
+        <h1 class='intro_content'>Kamasi is an open source platform developed to extend our autonomy and self organization on the web, without depends on third-part centralized service. <a target='_blank' href='https://github.com/django-rea/rea-project/wiki'>Learn more</a></h1>
       </div>
     </div>
   </div>
@@ -19,9 +19,8 @@ layout: default
         {% for post in site.posts %}
         <div class='medium-4 columns'>
           <div class='list_post' style="background-image :url({{post.image}})">
+            <div class='post_overlay'></div>
             <a  href="{{ post.url | relative_url }}"></a>
-              {% assign date_format = site.minima.date_format | defadivt: "%b %-d, %Y" %}
-              <span class="post_meta">{{ post.date | date: date_format }}</span>
               <h2 class="post_link">{{ post.title | escape }}</h2>
               <div class='post_excerpt'>{{ post.excerpt }}</div>
           </div>
